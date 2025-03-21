@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { AppBar, Toolbar, Typography } from "@mui/material";
+import "bootstrap/dist/css/bootstrap.min.css";
+import HeaderSection from "./components/HeaderSection";
+import CustomNavbar from "./components/Navbar";
+import AboutMe from "./components/AboutMe";
+import Projects from "./components/Project";
+import WorkEducation from "./components/WorkEducation";
+import Footer from "./components/Footer";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gradient-to-r from-purple-900 via-indigo-800 to-blue-900 font-[Poppins]">
+
+          <CustomNavbar />
+        
+      <HeaderSection />
+      <AboutMe/>
+      <Projects/>
+      <WorkEducation/>
+      <Footer/>
     </div>
   );
-}
+};
 
 export default App;
