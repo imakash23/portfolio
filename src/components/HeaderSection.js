@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
-import ProfileImage from "../assets/Full Stack Devloper.png";
+import ProfileImage from "../assets/dev.png";
 
 const startDate = new Date("2023-12-01");
 const getExperience = () => {
@@ -97,7 +97,7 @@ const HeaderSection = () => {
               src={ProfileImage}
               alt="Profile"
               className="img-fluid rounded-circle shadow-lg border border-danger"
-              style={{ width: "280px", height: "280px", borderColor: "#ff4000" }}
+              style={{ width: "350px", height: "320px", borderColor: "#ff4000" }}
             />
 
             {/* Floating Labels */}
@@ -108,16 +108,18 @@ const HeaderSection = () => {
               className="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 rounded fw-bold shadow"
               style={{ backgroundColor: "#ff4000" }}
             >
-              Full-Stack Developer
+              Full Stack Developer
             </motion.div>
+
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-              className="position-absolute bottom-0 start-0 bg-dark text-white px-3 py-1 rounded fw-bold shadow"
-            >
-              Mern Stack Developer
-            </motion.div>
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+  className="position-absolute bottom-0 start-0 bg-dark text-white px-3 py-1 rounded fw-bold shadow"
+>
+  MongoDB | Express.js | React | Node.js
+</motion.div>
+
           </motion.div>
         </Col>
       </Row>
