@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
-import ProfileImage from "../assets/dev.png";
+import ProfileImage from "../assets/updatedHeader.png";
 
 const startDate = new Date("2023-12-01");
 const getExperience = () => {
@@ -19,7 +19,6 @@ const HeaderSection = () => {
   const [experience, setExperience] = useState(getExperience());
   const [textIndex, setTextIndex] = useState(0);
   const texts = [
-    "I'm Akash, ",
     "a Passionate Full-Stack Developer, ",
     `with ${experience} of experience! `,
   ];
@@ -97,7 +96,7 @@ const HeaderSection = () => {
               src={ProfileImage}
               alt="Profile"
               className="img-fluid rounded-circle shadow-lg border border-danger"
-              style={{ width: "350px", height: "320px", borderColor: "#ff4000" }}
+              style={{ width: "350px", height: "360px", borderColor: "#ff4000" }}
             />
 
             {/* Floating Labels */}

@@ -4,22 +4,22 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Fleet Management – Kofleetz",
+    title: "Fleet Management",
     description: "A fleet management system with GPS tracking, trip management, and geofencing. Built with MERN Stack for scalability and performance.",
     tech: ["MERN Stack", "GPS Tracking", "Geofencing"],
   },
   {
-    title: "Mekdam - Warehouse Management",
+    title: "Warehouse Management",
     description: "Middleware between SAP and Power BI for seamless data transfer. Supports Excel upload, scheduled cron jobs, and API monitoring.",
     tech: ["PHP (Laravel)", "SAP", "Power BI"],
   },
   {
-    title: "Smart Coupon Application",
+    title: "Coupon Application",
     description: "A coupon management system for promotions and reward tracking. Allows coupon creation, bill uploads, and prize distribution.",
     tech: ["CodeIgniter", "PHP", "MySQL"],
   },
   {
-    title: "RDD – Mall Interior Submission",
+    title: "Mall Interior Submission",
     description: "A document approval system for mall tenants. Ensures secure uploads and multi-level approvals from managers.",
     tech: ["Laravel", "Workflow Automation", "Secure File Handling"],
   },
@@ -39,7 +39,7 @@ const Projects = () => {
           color: "transparent",
         }}
       >
-         Projects
+         Professional Experience
       </motion.h2>
 
       <Row className="mt-4">
