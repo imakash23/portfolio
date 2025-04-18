@@ -30,17 +30,17 @@ const HeaderSection = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
-  // Handle Button Clicks
-  const handleWhatsAppClick = () => {
-    window.open("https://wa.me/919360351608", "_blank"); // Replace with your number
-  };
+
+  // const handleWhatsAppClick = () => {
+  //   window.open("https://wa.me/919360351608", "_blank");
+  // };
 
   const handleHireMeClick = () => {
-    window.location.href = "mailto:akashmoorthy2002@gmail.com"; // Replace with your email
+    window.location.href = "mailto:akashmoorthy2002@gmail.com";
   };
 
   return (
-    <Container id="header"  style={{ marginTop:"130px",minHeight:"57vh"}}>
+    <Container id="header" style={{ marginTop: "130px", minHeight: "57vh" }}>
       <Row className="align-items-center">
         {/* Left Section - Text Content */}
         <Col md={6} className="text-left">
@@ -73,13 +73,24 @@ const HeaderSection = () => {
             <Button
               variant="danger"
               className="px-4 py-2 fw-bold"
-              style={{ backgroundColor: "#ff4000", border: "none" }} 
+              style={{ backgroundColor: "#ff4000", border: "none" }}
               onClick={handleHireMeClick}
             >
               Hire Me
             </Button>
-            <Button variant="outline-dark" className="px-4 py-2 fw-bold"  onClick={handleWhatsAppClick}>
+            {/* <Button variant="outline-dark" className="px-4 py-2 fw-bold"  onClick={handleWhatsAppClick}>
               WhatsApp
+            </Button> */}
+            <Button
+              variant="outline-dark"
+              className="px-4 py-2 fw-bold"
+              as="a"
+              href="/Akash_Resume.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get My Resume
             </Button>
           </motion.div>
         </Col>
@@ -96,7 +107,11 @@ const HeaderSection = () => {
               src={ProfileImage}
               alt="Profile"
               className="img-fluid rounded-circle shadow-lg border border-danger"
-              style={{ width: "350px", height: "360px", borderColor: "#ff4000" }}
+              style={{
+                width: "350px",
+                height: "360px",
+                borderColor: "#ff4000",
+              }}
             />
 
             {/* Floating Labels */}
@@ -111,14 +126,13 @@ const HeaderSection = () => {
             </motion.div>
 
             <motion.div
-  initial={{ opacity: 0, y: 50 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-  className="position-absolute bottom-0 start-0 bg-dark text-white px-3 py-1 rounded fw-bold shadow"
->
-  MongoDB | Express.js | React | Node.js
-</motion.div>
-
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+              className="position-absolute bottom-0 start-0 bg-dark text-white px-3 py-1 rounded fw-bold shadow"
+            >
+              MongoDB | Express.js | React | Node.js
+            </motion.div>
           </motion.div>
         </Col>
       </Row>

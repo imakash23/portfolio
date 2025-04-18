@@ -17,12 +17,12 @@ const Footer = () => {
           {/* Contact Section */}
           <Col md={6} className="mb-3">
             <h4 className="fw-bold">Contact Me</h4>
-            <p>
+            {/* <p>
               <FaWhatsapp className="me-2 text-success" />
               <a href="https://wa.me/919360351608" target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none">
                 WhatsApp
               </a>
-            </p>
+            </p> */}
             <p>
               <FaEnvelope className="me-2 text-warning" />
               <a href="mailto:akashmoorthy2002@gmail.com" className="text-white text-decoration-none">

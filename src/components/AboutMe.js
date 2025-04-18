@@ -16,15 +16,14 @@ const skills = {
     { name: "Laravel", percentage: 85, color: "linear-gradient(90deg, #ff6a00, #ee0979)" },
     { name: "CodeIgniter", percentage: 80, color: "linear-gradient(90deg, #ee0979, #ff0080)" },
     { name: "PHP", percentage: 88, color: "linear-gradient(90deg, #ff0080, #ff4000)" },
+    { name: "Postman", percentage: 92, color: "linear-gradient(90deg, #ff6a00, #ff4000)" },
+    { name: "GitHub", percentage: 88, color: "linear-gradient(90deg, #6e48aa, #9d50bb)" },
   ],
   database: [
     { name: "MySQL", percentage: 90, color: "linear-gradient(90deg, #0072ff, #00c6ff)" },
     { name: "MongoDB", percentage: 88, color: "linear-gradient(90deg, #00b09b, #96c93d)" },
   ],
-  tools: [
-    { name: "Postman", percentage: 92, color: "linear-gradient(90deg, #ff6a00, #ff4000)" },
-    { name: "GitHub", percentage: 88, color: "linear-gradient(90deg, #6e48aa, #9d50bb)" },
-  ],
+
 };
 
 
@@ -48,7 +47,7 @@ const AboutMe = () => {
            
             height: "auto",
             border: "4px solid #ff6a00",
-            borderRadius: "50%", // if you're using round shape
+            borderRadius: "50%",
           }}
           
         />
@@ -69,7 +68,6 @@ const AboutMe = () => {
         About Me
       </motion.h2>
 
-      {/* Paragraph */}
       <motion.p
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 50 }}
