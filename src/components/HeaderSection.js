@@ -85,7 +85,7 @@ const HeaderSection = () => {
               variant="outline-dark"
               className="px-4 py-2 fw-bold"
               as="a"
-              href="/Akash_Resume.pdf"
+              href={`${process.env.PUBLIC_URL}/Akash_Resume.pdf`}
               download
               target="_blank"
               rel="noopener noreferrer"
